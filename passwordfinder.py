@@ -1,7 +1,4 @@
-
 import re
-
-    # Regular expressions to check for password strength factors
 length = r'.{8,}'
 uppercase = r'[A-Z]'
 lowercase = r'[a-z]'
@@ -30,7 +27,5 @@ if not re.search(regex, password):
     print("Password should contain at least one special character.")
 print("Password is strong!")
 
-# Example usage:
-result = password
-print(result)
+print(password)
 
