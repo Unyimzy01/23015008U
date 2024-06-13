@@ -1,7 +1,7 @@
 import re
-import os  # Don't forget to import the os module
+import os 
 
-def urls(file_path):  # No changes needed here
+def urls(file_path): 
     urls = []
     url_regex = r"(https?://(?:www\.)?\w+\.\w+)"
     with open(file_path, 'r') as file:
@@ -21,7 +21,7 @@ def main():
         else:
             print("No URLs found in the file.")
     else:
-        print("File not found. Please enter a valid file path.")  # Notify if file not found
+        print("File not found. Please enter a valid file path.")
 
 if __name__ == "__main__":
     main()
